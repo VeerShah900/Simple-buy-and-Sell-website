@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+font-family:Arial, Helvetica, sans-serif;
+}
+h2{
+
+ color: red;
+ font-weight: 1000;
+ font-size: 32px;
+ position: absolute;
+ left: 200px;
+ top: 200px;
+ background-color: aqua;
+}
+.container{
+    background: url('pexels-misael-garcia-1707820.jpg');
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: circle(50.2% at 82% 23%);
+
+    /* clip-path: polygon(0%,100% 30%,0%,80%); */
+}
+.container.hover{
+    clip-path: circle(58.6% at 73% 25%);
+
+}
+.container.postfinal{
+    clip-path: inset(0 0 0 0);
+
+}
+.teaser{
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    top: 280px;
+    left: 195px;
+    background: red;
+}
+.trailer img{
+    width: 410px;
+ height: 410px;
+ margin-left: 20px;
+}
+
+img:hover{
+
+    /* Drop shadow filter */
+    filter: drop-shadow(15px 10px 4px #4444dd);
+    /* Expand css */
+    transform: scale(1.02);
+    transition: 2s;
+}
+.h1{
+    color: red;
+    /* width: 100%; */
+    /* text-align: center; */
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+ } 
+
+.btn{
+      outline: none;
+      border: none;
+      font-size: 32px;
+      background-color: orange;
+      position: absolute;
+      left: 45%;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+  .btn:hover{
+      background-color: orangered;
+  }
+
+  
+.triler img{
+    width: 410px;
+ height: 410px;
+ /* Signifies its margin from left */
+ margin-left: 20px;
+}
+
+.h1{
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+ } 
+
+.btn:hover{
+    background-color: orangered;
+}
+.btn1{
+      outline: none;
+      border: none;
+      font-size: 32px;
+      background-color: orange;
+      position: absolute;
+      left: 45%;
+      margin-top: 20px;      cursor: pointer;
+
+
+  }
+  .btn1:hover{
+      background-color: orangered;
+  }
+
+  .circle{
+      border-radius: 100%;
+      background-color: azure;
+      color: black;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      right: 10px;
+      font-size: 32px;
+      cursor: pointer;
+  }
+  .circle i{
+      margin-left: 10px;
+      margin-top: 5px;
+  }
+
+  .popup{
+      position: fixed;
+      display: none;
+      top: 5px;
+      right: 10px;
+height: 200px;
+/* Making it glassmorphism styled */
+background: rgba( 255, 255, 255, 0.50 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .popup.block{
+      display: block;
+  }
+
+  .popup .order{
+      /* display: none; */
+      margin-top: 70px;
+      font-size: 22px;
+cursor: pointer;
+  }
+  .popup .close{
+      margin-top: 10px;
+    right : 20px;
+    font-size: 32px;
+      position: fixed;
+      cursor: pointer;
+  }
+
+  .popup .sign{
+      /* display: none; */
+     margin-top: 30px;
+     font-size: 22px;
+     text-align: center;
+     cursor: pointer;
+  }
+
+  @media(max-width:800px){
+    .teaser{
+        margin-top: 35px;
+    }
+    .trailerimg{
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media(max-width:600px){
+    .teaser{
+        margin-top: 59px;
+    }
+    .trailerimg{
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+}
